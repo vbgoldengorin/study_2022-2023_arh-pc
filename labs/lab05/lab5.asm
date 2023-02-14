@@ -1,7 +1,7 @@
 SECTION .data 
 	hello: DB 'Goldengorin Vitaliy',18
 
-	helloLen: EQU $-hello 
+	helloLen: EQU $-hello  
 SECTION .text 
 	GLOBAL _start
 _start: 
@@ -10,6 +10,6 @@ _start:
 	mov ecx,hello 
 	mov edx,helloLen 
 	int 80h 
-	mov eax,1 
+	mov eax,1 :
 	mov ebx,0 
 	int 80h 
